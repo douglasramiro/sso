@@ -16,6 +16,6 @@ public class ApiController {
 
     @GetMapping("/protected/hello/{name}")
     protected String protectedHello(@PathVariable String name){
-        return "Hello, "+name;
+        return "Hello, "+name+". This is a secured endpoint!";
     }
 }
